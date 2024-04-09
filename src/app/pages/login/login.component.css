@@ -1,0 +1,4 @@
+.dot:hover{
+    scale: 1.2;
+    transition-duration: 20s;
+}
