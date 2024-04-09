@@ -1,4 +1,6 @@
 .dot:hover{
     scale: 1.2;
-    transition-duration: 20s;
+    transition-duration: 20s;}
+.dot{
+    transform: translateY(7px) rotate(180deg);
 }
