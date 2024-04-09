@@ -1,8 +1,94 @@
-<nav class="navbar bg-info p-4 py-2 d-flex flex-row items-center justify-content-between">
-    <img src="https://source.unsplash.com/random/80x40" alt="">
+<nav class="navbar p-4 py-2 d-flex flex-row items-center justify-content-between">
+    <img src="../../../assets/images/full_logo.png" alt="">
+    <!-- <img src="https://source.unsplash.com/random/80x40" alt=""> -->
     <div class="d-flex gap-3">
-        <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
-        <a routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">Signup</a>
+        <a class="btn btn-info text-light" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+        <a class="btn btn-info text-light" routerLink="/novels" routerLinkActive="active" ariaCurrentWhenActive="page">Novels</a>
+        <a class="btn btn-info text-light" routerLink="/manga" routerLinkActive="active" ariaCurrentWhenActive="page">Manga</a>
+        <a class="btn btn-info text-light" routerLink="/tech" routerLinkActive="active" ariaCurrentWhenActive="page">Technical</a>
+        <a class="btn btn-info text-light" routerLink="/music" routerLinkActive="active" ariaCurrentWhenActive="page">Music</a>
+        <a class="btn btn-info text-light" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
+        <a class="btn btn-info text-light" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+        <a class="btn btn-info text-light" routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">Sign Up</a>
 
     </div>
+    <style>
+        body {
+            margin: 0;
+            color:black;
+            font-family: Arial, sans-serif;}
+
+        .hamburger {
+            display: block;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;}
+
+        .bar {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+            position: absolute;
+            transition: transform 0.3s ease;}
+
+        .bar:nth-child(1) {top: 0;}
+
+        .bar:nth-child(2) {
+            top: 50%;
+            transform: translateY(-50%);}
+
+        .bar:nth-child(3) {bottom: 0;}
+
+        #toggle {display: none;}
+
+        #toggle:checked+.hamburger .bar:nth-child(1) {transform: translateY(7px) rotate(45deg);}
+
+        #toggle:checked+.hamburger .bar:nth-child(2) {opacity: 0;}
+
+        #toggle:checked+.hamburger .bar:nth-child(3) {transform: translateY(-7px) rotate(-45deg);}
+
+        .menu {
+            position: absolute;
+            top: 0;
+            right: -200px;
+            width: 200px;
+            height: 100%;
+            transition: right 0.3s ease;}
+
+        #toggle:checked+.hamburger+.menu {right: 0;}
+
+        .menu ul {
+            list-style: none;
+            padding: 0;}
+
+        .menu li {
+            padding: 10px 0;
+            border-bottom: 1px solid #555;}
+
+        .menu a {
+            color: #5f59595e;
+            text-decoration: none;
+            padding: 10px;
+            display: block;}
+
+        .menu a:hover {background-color: #cfc6c6b6;}
+    </style>
+    <div class="p-0">
+    <input type="checkbox" id="toggle">
+    <label class="hamburger" for="toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+    <nav class="menu" style="margin-top: 3.5rem;">
+        <ul>
+            <li><a class=" text-body border-primary" href="#"><ol>Home</ol></a></li>
+            <li><a class=" text-body border-primary" href="#"><ol>About</ol></a></li>
+            <li><a class=" text-body border-primary" href="#"><ol>Services</ol></a></li>
+            <li><a class=" text-body border-primary" href="#"><ol>Contact</ol></a></li>
+        </ul>
+    </nav>
+</div>
 </nav>

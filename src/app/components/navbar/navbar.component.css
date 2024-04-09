@@ -1,0 +1,8 @@
+img{
+    height: 3.5rem;
+    width:  20rem;
+}
+
+.navbar,.btn{background-color: rgba(103, 22, 234, 0.497);}
+
+.btn:hover{background-color:rgba(255, 255, 255, 0.251);}

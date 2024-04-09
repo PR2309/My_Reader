@@ -3,12 +3,12 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-manga',
   standalone: true,
   imports: [NavbarComponent,FooterComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './manga.component.html',
+  styleUrl: './manga.component.css'
 })
-export class HomeComponent {
+export class MangaComponent {
 
 }
