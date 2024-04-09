@@ -85,7 +85,9 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
 
-.div1 a{font-family: "Piazzolla", serif;}
+.div1 a{
+    white-space: nowrap;
+    font-family: "Piazzolla", serif;}
 
 a li{font-family: poppins;}
 
@@ -121,4 +123,3 @@ div.borderXwidth a:hover:before, div.borderXwidth a:hover:after{
     width: 90%;}
 
 /*****/
-
