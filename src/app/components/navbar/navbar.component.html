@@ -1,34 +1,37 @@
 <nav class="navbar p-4 py-2 d-flex flex-row items-center justify-content-between">
-    <!-- Logo -->
-    <img src="../../../assets/images/full_logo.png" alt="Logo">
-    <!-- <img src="https://source.unsplash.com/random/80x40" alt=""> -->
+    <img id="full_logo" src="../../../assets/images/full_logo.png" alt="Logo">
+    <img id="short_logo" src="../../../assets/images/short_logo.png" alt="Logo">
 
     <div class="div1 d-flex gap-3 borderXwidth">
-        <a class="opt btn btn-info text-light" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-        <a class="opt btn btn-info text-light" routerLink="/novels" routerLinkActive="active" ariaCurrentWhenActive="page">Novels</a>
-        <a class="opt btn btn-info text-light" routerLink="/manga" routerLinkActive="active" ariaCurrentWhenActive="page">Manga</a>
-        <a class="opt btn btn-info text-light" routerLink="/tech" routerLinkActive="active" ariaCurrentWhenActive="page">Technical</a>
-        <a class="opt btn btn-info text-light" routerLink="/music" routerLinkActive="active" ariaCurrentWhenActive="page">Music</a>
-        <a class="opt btn btn-info text-light" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
-        <a class="opt btn btn-info text-light" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
-        <a class="opt btn btn-info text-light" routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">Sign Up</a>
+        <a id="opt1" class="opt btn btn-info text-light" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+        <a id="opt2" class="opt btn btn-info text-light" routerLink="/novels" routerLinkActive="active" ariaCurrentWhenActive="page">Novels</a>
+        <a id="opt3" class="opt btn btn-info text-light" routerLink="/manga" routerLinkActive="active" ariaCurrentWhenActive="page">Manga</a>
+        <a id="opt4" class="opt btn btn-info text-light" routerLink="/tech" routerLinkActive="active" ariaCurrentWhenActive="page">Technical</a>
+        <a id="opt5" class="opt btn btn-info text-light" routerLink="/music" routerLinkActive="active" ariaCurrentWhenActive="page">Music</a>
+        <a id="opt6" class="opt btn btn-info text-light" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
+        <a id="opt7" class="opt btn btn-info text-light" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+        <a id="opt8" class="opt btn btn-info text-light" routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">Sign Up</a>
     </div>
-    
+
     <div class="p-2">
-    <input type="checkbox" id="toggle">
-    <label class="hamburger" for="toggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </label>
-    
-    <nav class="menu" style="margin-top: 3.5rem;">
-        <ul>
-            <li><a class=" text-body border-primary" href="#"><ol>Home</ol></a></li>
-            <li><a class=" text-body border-primary" href="#"><ol>About</ol></a></li>
-            <li><a class=" text-body border-primary" href="#"><ol>Services</ol></a></li>
-            <li><a class=" text-body border-primary" href="#"><ol>Contact</ol></a></li>
-        </ul>
-    </nav>
-</div>
+        <input type="checkbox" id="toggle">
+        <label class="hamburger" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <nav class="menu" style="margin-top: 3.5rem;">
+            <ul>
+                <li><a id="op1" class="op text-body border-primary text-light" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Home</ol></a></li>
+                <li><a id="op2" class="op text-body border-primary text-light" routerLink="/novels" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Novels</ol></a></li>
+                <li><a id="op3" class="op text-body border-primary text-light" routerLink="/manga" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Manga</ol></a></li>
+                <li><a id="op4" class="op text-body border-primary text-light" routerLink="/tech" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Technical</ol></a></li>
+                <li><a id="op5" class="op text-body border-primary text-light" routerLink="/music" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Music</ol></a></li>
+                <li><a id="op6" class="op text-body border-primary text-light" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>About Us</ol></a></li>
+                <li><a id="op7" class="op text-body border-primary text-light" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Login</ol></a></li>
+                <li><a id="op8" class="op text-body border-primary text-light" routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Sign Up</ol></a></li>
+            </ul>
+        </nav>
+    </div>
 </nav>
