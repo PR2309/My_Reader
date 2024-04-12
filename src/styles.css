@@ -5,3 +5,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+ /*Element Font*/
+  
+ @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap");
+  
+ * {
+    font-family: "Piazzolla", serif;
+    font-family: poppins;
+  }
+  
+  /**************************************************************/
