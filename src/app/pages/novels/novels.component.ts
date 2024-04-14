@@ -10,5 +10,8 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
   styleUrl: './novels.component.css'
 })
 export class NovelsComponent {
-
+  viewPdf() {
+  const pdfUrl = "C:/Users/LENOVO/Desktop/Project/MyReader/src/assets/Novels/A Little Life/A Little Life.pdf";
+  window.open(pdfUrl, '_blank');
+}
 }

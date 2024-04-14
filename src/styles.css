@@ -5,7 +5,19 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
- /*Element Font*/
+
+footer{
+  z-index: -100;
+  margin-top: auto;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+ /* Element Font*/
   
  @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap");
   
@@ -14,4 +26,4 @@
     font-family: poppins;
   }
   
-  /**************************************************************/
+  /************************************************************* */

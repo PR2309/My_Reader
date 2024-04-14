@@ -451,6 +451,10 @@ html, body {
             bottom: 0;
             right: 0;
         }
+
+        a:active > p .pie-trigger-label{
+          background-color: blue;
+        }
     </style>
 </head>
 <body>
@@ -469,9 +473,9 @@ html, body {
                   </label>
 
                   <div class="pie--parts">
-                    <a href="#1"><i class="las la-cog"></i></a>
-                    <a href="#2"><i class="las la-comments"></i></a>
-                    <a href="#3"><i class="las la-info"></i></a>
+                    <a href="#1" id="dark"><i class="las la-cog"></i></a>
+                    <!-- <a href="#2"><i class="las la-comments"></i></a>
+                    <a href="#3"><i class="las la-info"></i></a> -->
                   </div>
                 </div>
             </div>

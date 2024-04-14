@@ -9,8 +9,8 @@ import { MusicComponent } from './pages/music/music.component';
 import { TechComponent } from './pages/tech/tech.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
+  {path: '', component: HomeComponent },
+  {path: 'home', component: HomeComponent },
   {path: 'login', component: LoginComponent },
   {path: 'signup', component: SignupComponent},
   {path: 'about', component: AboutComponent},
@@ -18,5 +18,4 @@ export const routes: Routes = [
   {path: 'novels', component: NovelsComponent},
   {path: 'music', component: MusicComponent},
   {path: 'tech', component: TechComponent}
-  
 ];
