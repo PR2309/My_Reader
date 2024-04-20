@@ -1,0 +1,11 @@
+<style>
+footer{
+    z-index: -100;
+    margin-top: auto;}
+</style>
+
+<footer>
+    <div style="background-color: rgba(244, 244, 244, 0.7);">
+        <p class="text-center">&copy; All rights reserved. 2024</p>
+    </div>
+</footer>

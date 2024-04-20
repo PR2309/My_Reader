@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { QuickComponent } from '../quick/quick.component';
+import { ChoicesComponent } from '../choices/choices.component';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive,QuickComponent],
+  imports: [CommonModule, RouterLink, RouterLinkActive,ChoicesComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
 })

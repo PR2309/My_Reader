@@ -1,0 +1,254 @@
+<style>
+
+img{
+  height: 40vh;
+  border: 10px;
+  /* border-end-end-radius: 4px;
+  border-start-end-radius: 4px; */}
+
+.card:hover{
+  /* scale:1.5rem; */
+  transition: 0.5s;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 2px 2px;}
+
+.image:hover{
+  filter:blur(3px);
+  /* opacity: 0.7; */
+  transition: .5s;
+  box-shadow: 1.5rem;
+  scale: 5rem;
+  overflow: hidden;
+  cursor: pointer;}
+
+.card-container {
+  position: relative;}
+
+.image-button {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;}
+
+.image-button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);}
+
+#win {
+  /* background-image: url("https://source.unsplash.com/random/?stars-dark"); */
+  background-size: cover;
+  /* opacity: 0.80; */
+  z-index: -1;
+  background-position: center;
+  border-bottom: 10px;}
+
+.card-text>span{
+    white-space: nowrap;}
+
+</style>
+
+<div id="win" class="vh-99 overflow-x-hidden">
+    <app-navbar></app-navbar>
+    <div class="ele container">
+        <div class="container pt-4">
+            <div class="row">
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="Probability & Statistics fo Scientists">
+                    <!-- <img src="https://imgv2-1-f.scribdassets.com/img/word_document/245557238/original/ae1a3ca06a/1627816481?v=1" class="image card-img-top shadow rounded" alt="Image 1"> -->
+                    <img src="../../../assets/Other Books/Probability & Statistics for Scientists/Probability & Statistics for Scientists.png" class="image card-img-top shadow rounded" alt="Probability & Statistics for Scientists">
+                    <a href="../../../assets/Other Books/Probability & Statistics for Scientists/Text Book of Probability and Statistics.pdf" target="_blank">
+                    <button id="book1" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Probability & Statistics for Scientists</h5>
+                    <p class="card-text">
+                      <span><b>Author: </b><code class="text-dark">Walpole, Myers, Myers, Ye</code></span><br/>
+                      <span><b>Publication By: </b><code class="text-dark">Pearson</code></span><br/>
+                      <span><b>Format: </b><code class="text-dark">812 pages</code></span><br/>
+                      <span><b>Subject: </b><code class="text-dark">Mathematics</code></span><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="Discrete Mathematics Applications">
+                    <img src="../../../assets/Other Books/Discrete Mathematics Applications/Discrete Mathematics Applications.png" class="image card-img-top shadow rounded" alt="Discrete Mathematics Applications">
+                    <a href="../../../assets/Other Books/Discrete Mathematics Applications/Discrete Mathematics Applications.pdf" target="_blank">
+                    <button id="book2" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Discrete Mathematics Applications</h5>
+                    <p class="card-text">
+                      <span><b>Author: </b><code class="text-dark">Kenneth H. Rosen</code></span><br/>
+                      <span><b>Publication By: </b><code class="text-dark">McGraw Hills</code></span><br/>
+                      <span><b>Format: </b><code class="text-dark">1071 pages</code></span><br/>
+                      <span><b>Subject: </b><code class="text-dark">Mathematics</code></span><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="WorkBook of Ananlytical Skills">
+                    <img src="../../../assets/Other Books/WorkBook of Ananlytical Skills/WorkBook of Ananlytical Skills.png" class="image card-img-top shadow rounded" alt="WorkBook of Ananlytical Skills">
+                    <a href="../../../assets/Other Books/WorkBook of Ananlytical Skills/Workbook-PEA305.pdf" target="_blank">
+                    <button id="book3" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">WorkBook of Ananlytical Skills</h5>
+                    <p class="card-text">
+                      <span><b>Author: </b><code class="text-dark">Hanya Yanagihara</code></span><br/>
+                      <span><b>Publication By: </b><code class="text-dark">D.A.S.C. L.P.U.</code></span><br/>
+                      <span><b>Format: </b><code class="text-dark">116 pages</code></span><br/>
+                      <span><b>Language: </b><code class="text-dark">Ananlytical Skills</code></span><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="Concepts And Applications Of UNIX">
+                    <img src="../../../assets/Other Books/Concepts And Applications Of UNIX.pdf/Concepts And Applications Of UNIX.pdf.png" class="image card-img-top shadow rounded" alt="Concepts And Applications Of UNIX">
+                    <a href="../../../assets/Other Books/Concepts And Applications Of UNIX.pdf/Concepts And Applications Of UNIX.pdf" target="_blank">
+                    <button id="book4" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Concepts And Applications Of UNIX</h5>
+                    <p class="card-text">
+                      <b>Author: </b><code class="text-dark">Sumitabha Das</code><br/>
+                      <b>Publication By: </b><code class="text-dark">The McGraw Hills</code><br/>
+                      <b>Format: </b><code class="text-dark">131 pages</code><br/>
+                      <b>Subject: </b><code class="text-dark">UNIX</code><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="Beginning Linux Programming">
+                    <img src="../../../assets/Other Books/Beginning Linux Programming/Beginning Linux Programming.png" class="image card-img-top shadow rounded" alt="Beginning Linux Programming">
+                    <a href="../../../assets/Other Books/Beginning Linux Programming/Beginning Linux Programming, 4 Ed.pdf" target="_blank">
+                    <button id="book5" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Beginning Linux Programming</h5>
+                    <p class="card-text">
+                      <span><b>Author: </b><code class="text-dark">Matthew, Stones</code></span><br/>
+                      <span><b>Publication By: </b><code class="text-dark">Wiley Publishing</code></span><br/>
+                      <span><b>Format: </b><code class="text-dark">819 pages</code></span><br/>
+                      <span><b>Subject: </b><code class="text-dark">Linux Programming</code></span><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="Let Us C">
+                    <img src="../../../assets/Other Books/Let Us C/Let Us C.png" class="image card-img-top shadow rounded" alt="Let Us C">
+                    <a href="../../../assets/Other Books/Let Us C/let-us-c-14.pdf" target="_blank">
+                    <button id="book6" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Let Us C</h5><br/>
+                    <p class="card-text">
+                      <b>Author: </b><code class="text-dark">Yashwant Kanetkar</code><br/>
+                      <b>Publication By: </b><code class="text-dark">BPB Publications</code><br/>
+                      <b>Format: </b><code class="text-dark">636 pages</code><br/>
+                      <b>Subject: </b><code class="text-dark">C Programming</code><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="The C Programming Language">
+                    <img src="../../../assets/Other Books/The C Programming Language/The C Programming Language.png" class="image card-img-top shadow rounded" alt="The C Programming Language">
+                    <a href="../../../assets/Other Books/The C Programming Language/C Language.pdf" target="_blank">
+                    <button id="book7" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">The C Programming Language</h5>
+                    <p class="card-text">
+                        <span><b>Author: </b><code class="text-dark">Kernighan, Ritche</code></span><br/>
+                        <span><b>Publication By: </b><code class="text-dark">Hall Software</code></span><br/>
+                        <span><b>Format: </b><code class="text-dark">238 pages</code></span><br/>
+                        <span><b>Subject: </b><code class="text-dark">C Programming</code></span><br/>
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="CSS Cheat Sheet">
+                    <img src="../../../assets/Other Books/CSS Cheat Sheet/CSS Cheat Sheet.png" class="image card-img-top shadow rounded" alt="CSS Cheat Sheet">
+                    <a href="../../../assets/Other Books/CSS Cheat Sheet/CSS Cheatsheet.pdf" target="_blank">
+                    <button id="book8" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">CSS Cheat Sheet</h5><br/>
+                    <p class="card-text">
+                      <span><b>Author: </b><code class="text-dark">Free Code Camp</code></span><br/>
+                      <span><b>Publication By: </b><code class="text-dark">Free Code Camp</code></span><br/>
+                      <span><b>Format: </b><code class="text-dark">23 pages</code></span><br/>
+                      <span><b>Subject: </b><code class="text-dark">CSS Cheat Sheet</code></span><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="Computer Organisation And Design">
+                    <img src="../../../assets/Other Books/Computer Organisation And Design/Computer Organisation And Design.png" class="image card-img-top shadow rounded" alt="Computer Organisation And Design">
+                    <a href="../../../assets/Other Books/Computer Organisation And Design/Computer Organisation And Design_by_p_pal_chaudhuri.pdf" target="_blank">
+                    <button id="book9" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Computer Organisation And Design</h5>
+                    <p class="card-text">
+                      <span><b>Author: </b><code class="text-dark">P. Pal Chaudhuri</code></span><br/>
+                      <span><b>Publication By: </b><code class="text-dark">PHI Learning</code></span><br/>
+                      <span><b>Format: </b><code class="text-dark">920 pages</code></span><br/>
+                      <span><b>Language: </b><code class="text-dark">Computer Organisation</code></span><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="Computer System Architecture">
+                    <img src="../../../assets/Other Books/Computer System Architecture/Computer System Architecture.png" class="image card-img-top shadow rounded" alt="Computer System Architecture">
+                    <a href="../../../assets/Other Books/Computer System Architecture/Computer System Architecture.pdf" target="_blank">
+                    <button id="book10" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Computer System Architecture</h5>
+                    <p class="card-text">
+                      <span><b>Author: </b><code class="text-dark">Morris Mano</code></span><br/>
+                      <span><b>Publication By: </b><code class="text-dark">Prentice Hall</code></span><br/>
+                      <span><b>Format: </b><code class="text-dark">524 pages</code></span><br/>
+                      <span><b>Language: </b><code class="text-dark">Computer Architecture</code></span><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card container shadow py-2" title="Engineering Physics">
+                    <img src="../../../assets/Other Books/Enginnering Physics/Engineering Physics.jpg" class="image card-img-top shadow rounded" alt="Engineering Physics">
+                    <a href="../../../assets/Other Books/Enginnering Physics/Engineering Physics.pdf" target="_blank">
+                    <button id="book11" class="image-button rounded-circle py-3">▶</button>
+                    </a>
+                    <div class="card-body">
+                    <h5 class="card-title">Engineering Physics</h5><br/>
+                    <p class="card-text">
+                      <span><b>Author: </b><code class="text-dark">H.K.Malik, A.K.Singh</code></span><br/>
+                      <span><b>Publication By: </b><code class="text-dark">McGraw Hills</code></span><br/>
+                      <span><b>Format: </b><code class="text-dark">840 pages</code></span><br/>
+                      <span><b>Subject: </b><code class="text-dark">Physics</code></span><br/>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more cards here -->
+          </div>
+    </div>
+</div>
+</div>
+<div class="pt-10"><app-footer></app-footer></div>

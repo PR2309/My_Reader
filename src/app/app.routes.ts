@@ -7,15 +7,32 @@ import { MangaComponent } from './pages/manga/manga.component';
 import { NovelsComponent } from './pages/novels/novels.component';
 import { MusicComponent } from './pages/music/music.component';
 import { TechComponent } from './pages/tech/tech.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 export const routes: Routes = [
-  {path: '', component: HomeComponent },
-  {path: 'home', component: HomeComponent },
-  {path: 'login', component: LoginComponent },
-  {path: 'signup', component: SignupComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'manga', component: MangaComponent},
-  {path: 'novels', component: NovelsComponent},
-  {path: 'music', component: MusicComponent},
-  {path: 'tech', component: TechComponent}
+  // { path: '**', component: HomeComponent}, // Wildcard route for unmatched URLs
+  { path: '', component: DashboardComponent },
+  { path: 'dash', component: DashboardComponent,
+
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'home', component: HomeComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'signup', component: SignupComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'manga', component: MangaComponent },
+      { path: 'novels', component: NovelsComponent },
+      { path: 'music', component: MusicComponent },
+      { path: 'study', component: TechComponent },
+    ],
+
+  },
+  { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  // { path: 'about', component: AboutComponent },
+  { path: 'manga', component: MangaComponent },
+  { path: 'novels', component: NovelsComponent },
+  { path: 'music', component: MusicComponent },
+  { path: 'study', component: TechComponent },
 ];

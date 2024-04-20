@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MyReader": {
+    "myreader": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MyReader:build:production"
+              "buildTarget": "myreader:build:production"
             },
             "development": {
-              "buildTarget": "MyReader:build:development"
+              "buildTarget": "myreader:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "MyReader:build"
+            "buildTarget": "myreader:build"
           }
         },
         "test": {

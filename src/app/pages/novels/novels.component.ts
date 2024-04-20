@@ -11,7 +11,7 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 })
 export class NovelsComponent {
   viewPdf() {
-  const pdfUrl = "C:/Users/LENOVO/Desktop/Project/MyReader/src/assets/Novels/A Little Life/A Little Life.pdf";
+  const pdfUrl = "C:/Users/LENOVO/Desktop/Project/myreader/src/assets/Novels/A Little Life/A Little Life.pdf";
   window.open(pdfUrl, '_blank');
 }
 }

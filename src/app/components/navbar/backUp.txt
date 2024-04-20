@@ -1,0 +1,275 @@
+<style>
+
+
+img {
+    max-height: 3.5rem;
+    max-width: 20rem;}
+  
+.navbar, .opt {
+    background-color: rgb(4, 35, 147);}
+  
+.btn {
+    border: none;}
+
+.btn:hover {
+    /* box-shadow: 1cm;
+      scale: 1.2; */
+    background-color: rgba(255, 255, 255, 0.251);}
+  
+body {
+    margin: 0;
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+  
+/* Hamburger */
+  
+  .hamburger {
+    padding-top: 0.5cm;
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #e8ebebaa;
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+  
+  .bar:nth-child(1) {
+    top:10%;
+  }
+  
+  .bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .bar:nth-child(3) {
+    bottom: 10%;
+  }
+  
+  #toggle {
+    display: none;
+  }
+  
+  #toggle:checked + .hamburger .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  #toggle:checked + .hamburger .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #toggle:checked + .hamburger .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  
+  .menu {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    transition: right 0.3s ease;
+  }
+  
+  #toggle:checked + .hamburger + .menu {
+    right: 0;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+  }
+  
+  .menu a {
+    color: #5f59595e;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .menu a:hover {
+    background-color: #cfc6c6b6;
+  }
+  
+  /*****************************************************************/
+  
+  /* NavBar Element Font*/
+  
+  @import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap");
+  
+  .div1 a {
+    white-space: nowrap;
+    font-family: "Piazzolla", serif;
+  }
+  
+  a li {
+    font-family: poppins;
+  }
+  
+  /**************************************************************/
+  
+  /* NavBar Element design */
+  
+  div.div1 a {
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+  }
+  
+  /* Border X get width  */
+  div.borderXwidth a:before,
+  div.borderXwidth a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 1.8px;
+    content: "";
+    background: #ffffff75;
+    transition: all 0.3s;
+  }
+  
+  div.borderXwidth a:before {
+    left: 0px;
+    top: 0px;
+  }
+  
+  div.borderXwidth a:after {
+    right: 0px;
+    bottom: 0px;
+    height: 3px;
+  }
+  
+  div.borderXwidth a:hover:before,
+  div.borderXwidth a:hover:after {
+    opacity: 1;
+    width: 90%;
+  }
+  
+  /*****/
+
+
+/* Responsiveness */
+
+  .hamburger{display: none;}
+  
+  #short_logo{display: none;}
+
+  @media screen and (max-width: 1059px) {
+    .hamburger {display: inline-block;}
+  }
+  @media screen and (max-width: 676px) {
+    
+    #short_logo{
+      display: block;
+      max-width: 10rem;
+      max-height: 56px;}
+
+    #full_logo{display: none;}
+
+  }
+  
+
+ /* navbar options */
+  #opt1,#opt2,#opt3,#opt4,#opt5,#opt6,#opt7,#opt8{display: block;}
+
+  #op1,#op2,#op3,#op4,#op5,#op6,#op7,#op8{display: none;}
+
+    @media only screen and (max-width: 563px) {
+      #opt8 {display: none;}
+      #op8 {display: block;}
+      .menu li {border-bottom: none;}
+      }
+
+    @media only screen and (max-width: 400px) {
+      #opt7 {display: none;}
+      #op7 {display: block;}
+      .menu li {border-bottom:none;}}
+  
+    /* @media only screen and (max-width: 935px) {#opt6 {display: none;}} */
+    @media only screen and (max-width: 935px) {
+      #opt6 {display: none;}
+      #op6 {display: block;}
+      .menu li{border-bottom: none;}}
+  
+    @media only screen and (max-width: 870px) {
+      #opt5 {display: none;}
+      #op5 {display: block;}
+      .menu li {border-bottom: none;}}
+  
+    @media only screen and (max-width: 780px) {
+      #opt4 {display: none;}
+      #op4 {display: block;}
+      .menu li{border-bottom: none;}}
+  
+    @media only screen and (max-width: 650px) {
+      #opt3 {display: none;}
+      #op3 {display: block;}
+      .menu li{border-bottom: none;}}
+  
+    @media only screen and (max-width: 1010px) {
+      #opt2 {display: none;}
+      #op2{display: block;}
+      .menu li{border-bottom: none;}}
+  
+    @media only screen and (max-width: 1060px) {
+      #opt1 {display: none;}
+      #op1{display: block;}
+      .menu li{border-bottom: none;}}
+  
+    /***************/
+
+
+</style>
+
+<nav class="navbar p-4 py-2 d-flex flex-row items-center justify-content-between">
+    <img id="full_logo" src="../../../assets/images/full_logo.png" alt="Logo">
+    <img id="short_logo" src="../../../assets/images/short_logo.png" alt="Logo">
+
+    <div class="div1 d-flex gap-3 borderXwidth">
+        <a id="opt1" class="opt btn btn-info text-light" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+        <a id="opt2" class="opt btn btn-info text-light" routerLink="/novels" routerLinkActive="active" ariaCurrentWhenActive="page">Novels</a>
+        <a id="opt3" class="opt btn btn-info text-light" routerLink="/manga" routerLinkActive="active" ariaCurrentWhenActive="page">Manga</a>
+        <a id="opt4" class="opt btn btn-info text-light" routerLink="/tech" routerLinkActive="active" ariaCurrentWhenActive="page">Studies</a>
+        <a id="opt5" class="opt btn btn-info text-light" routerLink="/music" routerLinkActive="active" ariaCurrentWhenActive="page">Music</a>
+        <a id="opt6" class="opt btn btn-info text-light" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
+        <a id="opt7" class="opt btn btn-info text-light" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a>
+        <a id="opt8" class="opt btn btn-info text-light" routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page">Sign Up</a>
+    </div>
+
+    <div class="p-2">
+        <input type="checkbox" id="toggle">
+        <label class="hamburger" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <nav class="menu" style="margin-top: 3.5rem;">
+            <ul>
+                <li><a id="op1" class="op text-body border-primary text-light" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Home</ol></a></li>
+                <li><a id="op2" class="op text-body border-primary text-light" routerLink="/novels" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Novels</ol></a></li>
+                <li><a id="op3" class="op text-body border-primary text-light" routerLink="/manga" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Manga</ol></a></li>
+                <li><a id="op4" class="op text-body border-primary text-light" routerLink="/tech" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Studies</ol></a></li>
+                <li><a id="op5" class="op text-body border-primary text-light" routerLink="/music" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Music</ol></a></li>
+                <li><a id="op6" class="op text-body border-primary text-light" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>About Us</ol></a></li>
+                <li><a id="op7" class="op text-body border-primary text-light" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Login</ol></a></li>
+                <li><a id="op8" class="op text-body border-primary text-light" routerLink="/signup" routerLinkActive="active" ariaCurrentWhenActive="page"><ol>Sign Up</ol></a></li>
+            </ul>
+        </nav>
+    </div>
+</nav>
+<!-- <app-choices></app-choices> -->
