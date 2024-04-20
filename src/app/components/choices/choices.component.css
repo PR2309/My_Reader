@@ -1,0 +1,12 @@
+body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .inverted {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Add additional styles for inverted elements here */
+  

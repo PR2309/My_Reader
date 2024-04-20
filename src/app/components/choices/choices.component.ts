@@ -5,12 +5,13 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
   selector: 'app-choices',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive],
+  imports: [CommonModule, RouterLink, RouterLinkActive,],
   templateUrl: './choices.component.html',
   styleUrl: './choices.component.css'
 })
-export class ChoicesComponent {
+export class ChoicesComponent{
 
+  
   // pdfs = [
   //   { title: 'PDF 1', pdfUrl: 'path/to/pdf1.pdf' },
   //   { title: 'PDF 2', pdfUrl: 'path/to/pdf2.pdf' },
