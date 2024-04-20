@@ -10,7 +10,7 @@ import { TechComponent } from './pages/tech/tech.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 export const routes: Routes = [
-  // { path: '**', component: HomeComponent}, // Wildcard route for unmatched URLs
+  { path: '**', component: }, // Wildcard route for unmatched URLs
   { path: '', component: DashboardComponent },
   { path: 'dash', component: DashboardComponent,
 
