@@ -5,6 +5,7 @@
  * {
     font-family: "Piazzolla", serif  !important;
     font-family: poppins !important;
+    box-sizing: border-box;
   }
   
   /************************************************************* */
