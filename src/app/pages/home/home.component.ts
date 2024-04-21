@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
-import { QuickComponent } from '../../components/quick/quick.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({

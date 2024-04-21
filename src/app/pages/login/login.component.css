@@ -30,6 +30,6 @@ img{
   height: 500px;
 }
 
-input::placeholder{
+input::placeholder, label{
   font-size: 0.8em;
 }
