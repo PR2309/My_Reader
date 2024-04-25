@@ -48,7 +48,7 @@ a:hover {
     hsl(0, 92%, 45%) 10%,
     hsl(123, 87%, 38%) 20%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 2s infinite linear;
   padding: 60px;

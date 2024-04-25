@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive } from '@angular/router';
-// import { manga } from '../../../assets/Manga/manga';
+import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
+import { Manga } from '../../shared/models/Manga';
+import { MangaService } from '../../services/Manga/manga.service';
 
 @Component({
   selector: 'app-manga',
@@ -19,5 +20,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './manga.component.css',
 })
 export class MangaComponent {
-  // manga = manga;
+  mangas:Manga[] = [];
+  constructor(private mangaService:MangaService){
+    this.mangas = mangaService.getAll();
+  };
+  ngOnInit():void{
+
+  }
 }

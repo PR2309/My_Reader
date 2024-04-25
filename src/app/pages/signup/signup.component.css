@@ -18,7 +18,7 @@
   opacity: 110;
   background-color: rgba(255, 255, 255, 0.681);
   width: 400px;
-  height:600px;
+  height: 600px;
 }
 input::placeholder, label{
   font-size: 0.8em;

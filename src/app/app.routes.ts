@@ -9,22 +9,14 @@ import { MusicComponent } from './pages/music/music.component';
 import { TechComponent } from './pages/tech/tech.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DefaultComponent } from './pages/default/default.component';
+import { BookComponent } from './pages/books/books.component';
 
 export const routes: Routes = [
+
+  { path: 'search/:searchBook', component: BookComponent,}, // Search page with search
+
   { path: '', component: DashboardComponent },
   { path: 'dash', component: DashboardComponent,
-
-    // children: [
-    //   { path: '', component: HomeComponent },
-    //   { path: 'home', component: HomeComponent },
-    //   { path: 'login', component: LoginComponent },
-    //   { path: 'signup', component: SignupComponent },
-    //   { path: 'about', component: AboutComponent },
-    //   { path: 'manga', component: MangaComponent },
-    //   { path: 'novels', component: NovelsComponent },
-    //   { path: 'music', component: MusicComponent },
-    //   { path: 'study', component: TechComponent },
-    // ],
 
   },
   { path: 'home', component: HomeComponent },
@@ -33,7 +25,7 @@ export const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'manga', component: MangaComponent },
   { path: 'novels', component: NovelsComponent },
-  { path: 'music', component: MusicComponent },
+  { path: 'all', component: BookComponent },
   { path: 'study', component: TechComponent },
   { path: '**', component:DefaultComponent }, // Wildcard route for unmatched URLs
 

@@ -1,10 +1,9 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule, NgIf } from '@angular/common';
-// import { Auth, createUserWithEmailAndPassword } from '@angular/fire/auth';
-// import { Firestore, doc,setDoc } from '@angular/fire/firestore';
 import { FormGroup, FormsModule, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-signup',
@@ -92,48 +91,21 @@ export class SignupComponent {
     }
     return b;
   }
+  store(){
+    // function to store the data
+  }
   submit() {
     const mail = this.signupForm.value['email'];
+    const name = this.signupForm.value['name'];
     const pass = this.signupForm.value['password'];
     const cpass = this.signupForm.value['cpassword'];
     console.log(mail, pass);
 
     if (this.validatePassword(pass,cpass) && this.validateMail(mail)) {
-      alert('Login Successful!!!');
+      // this.store();
+      alert('Account Created Successfully!!!');
+
       this._router.navigate(['login']);
     }
   }
-
-  
-  // constructor(private router: Router) {}
-
-  // private auth: Auth = inject(Auth);
-  // private firestore: Firestore = inject(Firestore);
-  // username: string = '';
-  // email: string = '';
-  // password: string = '';
-  // confrimpassword: string = '';
-  // async register(event: Event) {
-  //   event.preventDefault();
-  //   await createUserWithEmailAndPassword(this.auth, this.email, this.password)
-  //     .then(async (userCredential) => {
-  //       console.log('User registered successfully', userCredential.user);
-  //       await setDoc(
-  //         doc(this.firestore, 'users', userCredential.user.uid),
-  //         {
-  //           username: this.username,
-  //           email: this.email,
-  //         },
-  //         { merge: true }
-  //       );
-  //     })
-  //     .then(() => {
-  //       console.log('User data saved successfully');
-  //       /* send to home page */
-  //       this.router.navigate(['/home']);
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error registering user', error);
-  //     });
-  // }
 }
