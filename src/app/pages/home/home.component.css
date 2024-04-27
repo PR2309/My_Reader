@@ -23,9 +23,21 @@
     opacity: 100;
     background-color:none;
   }
-  
-
-  
+  .parts.text-center{
+    font-size: 2em;
+    color:black;
+    font-family: "Dancing Script",cursive !important;
+  }
+#nov{
+  margin-top:2%;
+  border:2px solid antiquewhite;
+  border-radius: 10px;
+  padding-bottom: 2% !important;
+}
+  #no1{
+    position: relative;
+    left:-3rem;
+  }
   .search-field{
     border: none;
     height: 2rem;
