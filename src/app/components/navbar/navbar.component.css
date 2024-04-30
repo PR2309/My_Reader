@@ -67,7 +67,7 @@ img {
   
   .menu {
     position: absolute;
-    top: 22% !important;
+    top: 36% !important;
     z-index: 1000 !important;
     right: -400px;
     width: 400px;
@@ -114,6 +114,7 @@ img {
   .div1 a {
     white-space: nowrap;
     font-family: "Piazzolla", serif;
+    padding-top: 10px;
   }
   
   a li {
@@ -172,7 +173,7 @@ img {
     .hamburger {display: inline-block;}
   }
 
-  @media screen and (max-width: 676px) {
+  @media screen and (max-width: 800px) {
     #short_logo{
       display: block;
       max-width: 10rem;
@@ -200,7 +201,7 @@ img {
       .menu li {border-bottom:none;}}
   
     /* @media only screen and (max-width: 935px) {#opt6 {display: none;}} */
-    @media only screen and (max-width: 935px) {
+    @media only screen and (max-width: 1080px) {
       #opt6 {display: none;}
       #op6 {display: block;}
       .menu li{border-bottom: none;}}
@@ -210,7 +211,7 @@ img {
       #op5 {display: block;}
       .menu li {border-bottom: none;}}
   
-    @media only screen and (max-width: 780px) {
+    @media only screen and (max-width: 800px) {
       #opt4 {display: none;}
       #op4 {display: block;}
       .menu li{border-bottom: none;}}
@@ -220,12 +221,12 @@ img {
       #op3 {display: block;}
       .menu li{border-bottom: none;}}
   
-    @media only screen and (max-width: 1010px) {
+    @media only screen and (max-width: 960px) {
       #opt2 {display: none;}
       #op2{display: block;}
       .menu li{border-bottom: none;}}
   
-    @media only screen and (max-width: 1060px) {
+    @media only screen and (max-width: 1080px) {
       #opt1 {display: none;}
       #op1{display: block;}
       .menu li{border-bottom: none;}}

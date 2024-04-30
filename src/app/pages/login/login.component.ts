@@ -95,6 +95,9 @@ export class LoginComponent {
       if((email==="user1@yahoo.com" && password==="@User1")){return true;}
       if((email==="user2@OUTLOOK.com" && password==="@User2")){return true;}
       if((email==="user3@gmail.com" && password==="@User3")){return true;}
+      // localStorage.setItem('user', JSON.stringify(user));
+
+      if((email==="user4@gmail.com" && password==="@User4")){return true;}
       return false;
     }
     submit() {

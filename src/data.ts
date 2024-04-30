@@ -459,16 +459,16 @@ export const sample_novel: Novel[] = [
     imageUrl: 'assets/Novels/Story Of My Life/Story_Of_My_Life.jpeg',
     pdfUrl: 'assets/Novels/Story Of My Life/Story Of My Life.pdf',
   },
-  {
-    id : "Novel6",
-    title: "Fifty Shades Of Grey",
-    author: "E.L.James",
-    publish: "25 May, 2011",
-    format: "514 pages, Paperback",
-    language: "English",
-    imageUrl: "assets/Novels/Fifty Shades Of Grey/Fifty Shades Of Grey.png",
-    pdfUrl: "assets/Novels/Fifty Shades Of Grey/Fifty Shades Of Grey.pdf"
-  },
+  // {
+  //   id : "Novel6",
+  //   title: "Fifty Shades Of Grey",
+  //   author: "E.L.James",
+  //   publish: "25 May, 2011",
+  //   format: "514 pages, Paperback",
+  //   language: "English",
+  //   imageUrl: "assets/Novels/Fifty Shades Of Grey/Fifty Shades Of Grey.png",
+  //   pdfUrl: "assets/Novels/Fifty Shades Of Grey/Fifty Shades Of Grey.pdf"
+  // },
   {
     id: 'Novel7',
     title: 'Crime And Punishment',
@@ -480,16 +480,16 @@ export const sample_novel: Novel[] = [
     pdfUrl:
       'assets/Novels/Crime And Punishment/Crime_and_Punishment-Fyodor_Dostoevsky.pdf',
   },
-  {
-    id : "Novel8",
-    title: "Mind F*ck",
-    author: "S.T.Abby",
-    publish: "7 Jul, 2022",
-    format: "692 pages, Paperback",
-    language: "English",
-    imageUrl: "assets/Novels/Mind Fuck/Mind_Fuck.png",
-    pdfUrl: "assets/Novels/Mind Fuck/Mind Fuck.pdf"
-  },
+  // {
+  //   id : "Novel8",
+  //   title: "Mind F*ck",
+  //   author: "S.T.Abby",
+  //   publish: "7 Jul, 2022",
+  //   format: "692 pages, Paperback",
+  //   language: "English",
+  //   imageUrl: "assets/Novels/Mind Fuck/Mind_Fuck.png",
+  //   pdfUrl: "assets/Novels/Mind Fuck/Mind Fuck.pdf"
+  // },
   {
     id: 'Novel9',
     title: "Man's Search For Meaning",
@@ -895,7 +895,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech2',
@@ -909,7 +909,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech3',
@@ -923,7 +923,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech4',
@@ -937,7 +937,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech5',
@@ -951,7 +951,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech6',
@@ -965,7 +965,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech7',
@@ -979,7 +979,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech8',
@@ -993,7 +993,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech9',
@@ -1007,7 +1007,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech10',
@@ -1021,7 +1021,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech11',
@@ -1035,7 +1035,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech12',
@@ -1049,7 +1049,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech13',
@@ -1063,7 +1063,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech14',
@@ -1077,7 +1077,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech15',
@@ -1091,7 +1091,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech16',
@@ -1105,7 +1105,7 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
   },
   {
     id: 'Tech17',
@@ -1119,6 +1119,20 @@ export const sample_books: Book[] = [
 
     status: '',
     language: '',
-    origin: '',
+    origin: 'N.A.',
+  },
+  {
+    id: 'Tech18',
+    title: 'Rich Dad Poor Dad',
+    author: 'Robert H. Fiyosaki',
+    publish: 'Plata Publishing',
+    format: '241 pages',
+    subject: 'Econimic Midset',
+    imageUrl: 'assets/Other Books/Rich Dad Poor Dad/Rich Dad Poor Dad.png',
+    pdfUrl: 'assets/Other Books/Rich Dad Poor Dad/Rich Dad Poor Dad.pdf',
+
+    status: 'Released',
+    language: '',
+    origin: 'N.A.',
   },
 ];

@@ -5,11 +5,12 @@
             <div class="row">
               <div class="col-md-3 mb-4" *ngFor="let novel of novels">
                 <div class="card container shadow py-2" title="{{novel.title}}">
-                    
                     <img [src]="novel.imageUrl" class="image card-img-top shadow rounded" [alt]="novel.title">
+                    <div class="cover">
                     <a [href]="novel.pdfUrl" target="_blank">
                     <button id="novel1" class="image-button rounded-circle py-3">▶</button>
                     </a>
+                    </div>
                     <div class="card-body">
                     <h5 class="card-title">{{novel.title}}</h5>
                     <p class="card-text">

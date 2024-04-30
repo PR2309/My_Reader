@@ -6,9 +6,11 @@
               <div class="col-md-3 mb-4"  *ngFor="let tech of techs">
                 <div class="card container shadow py-2" title="{{tech.title}}">
                     <img [src]="tech.imageUrl" class="image card-img-top shadow rounded" [alt]="tech.title">
+                    <div class="cover">
                     <a [href]="tech.pdfUrl" target="_blank">
                     <button id="book1" class="image-button rounded-circle py-3">▶</button>
                     </a>
+                    </div>
                     <div class="card-body">
                     <h5 class="card-title">{{tech.title}}</h5>
                     <p class="card-text">
