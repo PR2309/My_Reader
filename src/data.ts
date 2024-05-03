@@ -16,61 +16,6 @@ import { Tech } from './app/shared/models/Tech';
 //       imageUrl: 'assets/images/c3.jpg',
 //       tags: ['FastFood', 'Pizza', 'Lunch'],
 //     },
-//     {
-//       id:'2',
-//       name: 'Meatball',
-//       price: 20,
-
-//       favorite: true,
-//       origins: ['persia', 'middle east', 'china'],
-
-//       imageUrl: 'assets/images/c3.jpg',
-//       tags: ['SlowFood', 'Lunch'],
-//     },
-//     {
-//       id:'3',
-//       name: 'Hamburger',
-//       price: 5,
-
-//       favorite: false,
-//       origins: ['germany', 'us'],
-
-//       imageUrl: 'assets/images/c3.jpg',
-//       tags: ['FastFood', 'Hamburger'],
-//     },
-//     {
-//       id:'4',
-//       name: 'Fried Potatoes',
-//       price: 2,
-
-//       favorite: true,
-//       origins: ['belgium', 'france'],
-
-//       imageUrl: 'assets/images/c3.jpg',
-//       tags: ['FastFood', 'Fry'],
-//     },
-//     {
-//       id:'5',
-//       name: 'Chicken Soup',
-//       price: 11,
-
-//       favorite: false,
-//       origins: ['india', 'asia'],
-
-//       imageUrl: 'assets/images/c3.jpg',
-//       tags: ['SlowFood', 'Soup'],
-//     },
-//     {
-//       id:'6',
-//       name: 'Vegetables Pizza',
-//       price: 9,
-
-//       favorite: false,
-//       origins: ['italy'],
-
-//       imageUrl: 'assets/images/c3.jpg',
-//       tags: ['FastFood', 'Pizza', 'Lunch'],
-//     },
 //   ]
 
 export const sample_mangas: Manga[] = [
