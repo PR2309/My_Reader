@@ -1,6 +1,11 @@
-# myreader
+# MyReader
+
+MyReader is an Angular-based application designed to provide users with a seamless reading experience. Utilizing TypeScript, Bootstrap, HTML, and CSS, it offers a responsive and user-friendly interface for managing and reading digital content. The application allows users to track their reading progress, organize their favorite materials, and explore various topics in an interactive manner.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+
+## Tech Stack 
+-  Angular, TypeScript, Bootstrap, HTML, CSS
 
 ## Development server
 
